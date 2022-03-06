@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./components/styled/Global.styled";
+import { Home } from "./Sections/Home";
 
 function App() {
 
@@ -12,16 +13,20 @@ const theme ={
   },
   fontColors:{
     one:'#fff',
+    two: '#141E27',
   },
   hoverColors:{
     yellow: '#F1D00A'
-  }
+  },
+ section:{
+  height:'100vh'
+ } 
 }
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
-<Header />
+<Home />
 
    </ThemeProvider> 
   );

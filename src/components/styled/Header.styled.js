@@ -1,22 +1,25 @@
 import styled from 'styled-components'
 
 export const  StyledHeader = styled.header`
-background-color:${({theme})=>theme.colors.header};
+
 width: 100vw;
-padding:50px;
-h1{
-color:${({theme})=>theme.fontColors.one};
+display:flex;
+padding: 30px 60px;
+justify-content:space-between;
+h2{
+color:${({theme})=>theme.fontColors.two};
 }
 `
 export const Nav = styled.nav`
-font-size:clamp(15px,4vw,25px);
-width:20%;
+font-size:clamp(10px,4vw,18px);
+width: 50%;
 display:flex;
 justify-content:space-between;
 a{
     text-decoration: none;
-    color:${({theme})=>theme.fontColors.one};
+    color:${({theme})=>theme.fontColors.two};
     transition: border-bottom 1s;
+    padding-top:6px
 }
 a:hover{
     border-bottom:1px solid ${({theme})=>theme.hoverColors.yellow};
@@ -25,5 +28,9 @@ a:hover{
 `
 export const Container = styled.div`
 display:flex;
-justify-content:space-between;
+justify-content:center;
+width: 50%;
+
 `
+
+/* CSS */

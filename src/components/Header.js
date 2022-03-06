@@ -1,18 +1,26 @@
 import React from 'react'
+import { ContactNav } from './ContactNav'
 import {StyledHeader} from './styled/Header.styled'
 import { Nav } from './styled/Header.styled'
 import { Container } from './styled/Header.styled'
+
 export const Header = () => {
   return (
     <StyledHeader>
+
+    
+      <h2>Fahim.Portfolio</h2> 
       <Container>
-      <h1>Fahim.Portfolio</h1> 
            <Nav>
-             <a href='/'>Home</a>
-             <a href='/mywork'>Project</a>
-             <a href='/contact'>Contact</a>
+             <a href='/'>Hello</a>
+             <a href='/mywork'>Projects</a>
+             <a href='/contact'>Contact Me</a>
            </Nav>
-      </Container>
+           </Container>
+           <ContactNav />
+          
+
+  
     </StyledHeader>
   )
 }
